@@ -45,7 +45,8 @@ If you want to target a specific test file add
 
     spec/acceptance/1_class_spec.rb
 
-to the end of the above command-line.
+to the end of the above command-line. You may want to create a separate file to
+reduce initial development time further.
 
 Check puppet-module-keycloak/.github/workflows/ci.yaml for a list of
 environment variables you can customize.
