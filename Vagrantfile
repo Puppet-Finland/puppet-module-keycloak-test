@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
     box.vm.provision "shell", path: "beaker.sh"
     box.vm.provider "virtualbox" do |vb|
       vb.gui = false
-      vb.memory = 2048
+      vb.memory = 3072
     end
   end
 end
