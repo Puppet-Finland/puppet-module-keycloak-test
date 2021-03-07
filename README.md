@@ -34,20 +34,14 @@ Ensure that you have run
 
 in the puppet-module-keycloak directory.
 
-You should be able to launch acceptance tests of your choosing with
+To launch a subset of non-domain-mode tests:
 
     PUPPET_INSTALL_TYPE=agent \
     BEAKER_PUPPET_COLLECTION=puppet6 \
     BEAKER_set=centos-7 \
+    BEAKER_keycloak_domain_mode_cluster=no \
     BEAKER_destroy=yes \
     pdk bundle exec rspec spec/acceptance
-
-If you want to target a specific test file add
-
-    spec/acceptance/1_class_spec.rb
-
-to the end of the above command-line. You may want to create a separate file to
-reduce initial development time further.
 
 To run domain-mode cluster tests do:
 
