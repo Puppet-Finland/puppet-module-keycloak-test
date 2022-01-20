@@ -52,6 +52,12 @@ To run domain-mode cluster tests do:
     BEAKER_destroy=yes \
     pdk bundle exec rspec spec/acceptance/1_domain_mode_cluster_spec.rb
 
+Some tests require you to pass
+
+    BEAKER_keycloak_full=yes
+
+to run, so you may need to add that.
+
 If you want to debug test failures in multi-machine test setup set BEAKER_destroy=no
 and login to the container(s) you want to look into:
 
