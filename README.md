@@ -18,6 +18,8 @@ develop the code. If that is the case then you should be able to just
 
 Then run any tests you need with pdk.
 
+Remove `spec/fixtures/modules/keycloak` symbolic link
+
 # Running validation
 
     $ pdk validate
