@@ -43,6 +43,7 @@ To launch a subset of non-domain-mode tests:
     BEAKER_set=centos-7 \
     BEAKER_keycloak_domain_mode_cluster=no \
     BEAKER_destroy=yes \
+    BEAKER_keycloak_full=yes \
     pdk bundle exec rspec spec/acceptance
 
 To run domain-mode cluster tests do:
@@ -52,6 +53,7 @@ To run domain-mode cluster tests do:
     BEAKER_set=centos-7-domain-mode-cluster \
     BEAKER_keycloak_domain_mode_cluster=yes \
     BEAKER_destroy=yes \
+    BEAKER_keycloak_full=yes \
     pdk bundle exec rspec spec/acceptance/1_domain_mode_cluster_spec.rb
 
 Some tests require you to pass
